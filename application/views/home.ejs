@@ -1,4 +1,5 @@
-<%- include('includes/header') %>
+<%- include('includes/header',{userCss : [ "node_modules/video.js/dist/video-js.min.css"
+]}) %>
 
 
 <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -50,4 +51,4 @@
   </a>
 </div> -->
 
-    <%- include('includes/footer') %>
+    <%- include('includes/footer',{userJs : ["node_modules/video.js/dist/video.min.js"]}) %>

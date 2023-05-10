@@ -9,4 +9,11 @@ home.index  = async (req ,res) => {
 
 }
 
+
+home.videoPlyer  = async (req ,res) => {
+
+    res.render('video_player');
+
+}
+
 module.exports = home;

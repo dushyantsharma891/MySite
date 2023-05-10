@@ -9,6 +9,14 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="/application/thems/img/exaple_fevicon.png">
+        <link href="node_modules/video.js/dist/video-js.min.css" type="stylesheet">
+        <% if( userCss && userCss.length > 0){ %>
+            <%  for(let cssData of userCss){ %>
+         
+             <link href = "<%=cssData%>" rel="stylesheet">
+         
+         <%  } %>
+         <%} %> 
     </head>
     <body>
         <header>
